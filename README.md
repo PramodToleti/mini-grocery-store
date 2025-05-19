@@ -44,7 +44,6 @@ A modern, responsive grocery store web app built with React, TypeScript, and Vit
    ```sh
    git clone https://github.com/YOUR_GITHUB_USERNAME/mini-grocery-store.git
    cd mini-grocery-store
-   git checkout grocery-store
    ```
 
 2. **Install dependencies:**
