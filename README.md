@@ -1,54 +1,63 @@
-# React + TypeScript + Vite
+# Mini Grocery Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive grocery store web app built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product Catalog**:
 
-## Expanding the ESLint configuration
+  - Displays at least 12 grocery products with name, price, category, and image.
+  - Responsive, visually clean layout.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Category Filter**:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  - Dynamically generated list of categories.
+  - Filter products by category with animated dropdown.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Shopping Cart**:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  - Add, remove, and update quantity of products in the cart.
+  - Cart summary with product list, quantity, and total price.
+  - Cart data persists in localStorage.
+  - Toast notifications for cart actions.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Dark Mode**:
+
+  - Toggle between light and dark themes.
+
+- **Mobile Friendly**:
+  - Fully responsive design for all devices.
+  - Optimized navigation and cart UI for mobile.
+
+## Setup Instructions
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/YOUR_GITHUB_USERNAME/mini-grocery-store.git
+   cd mini-grocery-store
+   ```
+
+2. **Install dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```sh
+   npm run dev
+   ```
+
+4. **Open in your browser:**  
+   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+## Known Limitations / Improvements
+
+- No backend integration for user authentication or real orders (cart is local only).
+- No product search or sorting.
+- Accessibility can be further improved.
+- No unit tests implemented.
+
+---
