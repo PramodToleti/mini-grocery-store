@@ -1,0 +1,86 @@
+.filter-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.filter-toggle {
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(90deg, #2c79eb 60%, #4e9cff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(44, 121, 235, 0.08);
+  transition: background 0.2s, transform 0.15s;
+}
+
+.filter-toggle:active {
+  transform: scale(0.97);
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  z-index: 10;
+  background-color: var(--card-bg, #f9f9f9);
+  border: 1px solid var(--border, #ccc);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(44, 121, 235, 0.13);
+  min-width: 150px;
+  animation: dropdownFadeIn 0.25s cubic-bezier(0.4, 1.4, 0.6, 1) both;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.filter-option:last-child {
+  margin-bottom: 0;
+}
+
+.filter-checkbox {
+  accent-color: #2c79eb;
+  margin-right: 0.6rem;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 4px;
+  transition: accent-color 0.2s;
+}
+
+[data-theme="dark"] .filter-dropdown {
+  background: #23272f;
+  border-color: #353a45;
+  box-shadow: 0 8px 24px rgba(44, 121, 235, 0.18);
+}
+
+[data-theme="dark"] .filter-option {
+  color: #f2f4fa;
+}
+
+[data-theme="dark"] .filter-checkbox {
+  accent-color: #8bbcff;
+}
