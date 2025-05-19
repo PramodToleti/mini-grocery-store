@@ -42,16 +42,15 @@ const CartContainer: React.FC = () => {
                 +
               </button>
             </div>
-            <div className='cart-item-total'>
-              ${(item.price * item.quantity).toFixed(2)}
+            <div>
+              <button
+                className='cart-item-remove'
+                onClick={() => removeFromCart(item.id)}
+                aria-label='Remove item'
+              >
+                ×
+              </button>
             </div>
-            <button
-              className='cart-item-remove'
-              onClick={() => removeFromCart(item.id)}
-              aria-label='Remove item'
-            >
-              ×
-            </button>
           </div>
         ))}
       </div>

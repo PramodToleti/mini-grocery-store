@@ -28,6 +28,8 @@
   padding: 0.7rem 1rem;
   box-shadow: 0 1px 4px rgba(44, 121, 235, 0.04);
   position: relative;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .cart-item-img {
@@ -37,17 +39,22 @@
   object-fit: cover;
   margin-right: 1rem;
   background: #f3f3f3;
+  flex-shrink: 0;
 }
 
 .cart-item-details {
   flex: 1;
-  min-width: 120px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .cart-item-title {
   font-weight: 600;
   font-size: 1.1rem;
   color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cart-item-category {
@@ -90,6 +97,8 @@
   color: var(--text);
   min-width: 70px;
   text-align: right;
+  margin-left: auto;
+  white-space: nowrap;
 }
 
 .cart-item-remove {
@@ -101,6 +110,7 @@
   cursor: pointer;
   font-weight: bold;
   transition: color 0.2s;
+  flex-shrink: 0;
 }
 
 .cart-item-remove:hover {
@@ -136,7 +146,7 @@
   max-width: 400px;
   margin: 4rem auto;
   text-align: center;
-  color: white;
+  color: var(--text);
   background: var(--card-bg);
   border-radius: 12px;
   padding: 2.5rem 1.5rem;
@@ -161,4 +171,61 @@
 [data-theme="dark"] .cart-item-qty button:hover {
   background: #2c79eb;
   color: #fff;
+}
+
+@media (max-width: 600px) {
+  .cart-container {
+    padding: 1rem 0.2rem 1rem 0.2rem;
+  }
+  .cart-item {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.7rem 0.5rem;
+    gap: 0.5rem;
+  }
+  .cart-item-img {
+    margin-right: 0.7rem;
+    margin-bottom: 0;
+    width: 48px;
+    height: 48px;
+  }
+  .cart-item-details {
+    width: 45%;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+  .cart-item-title {
+    font-size: 0.98rem;
+  }
+  .cart-item-qty {
+    margin: 0 0.5rem 0 0.5rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  .cart-item-total {
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: left;
+    min-width: 55px;
+    font-size: 0.98rem;
+  }
+  .cart-item-remove {
+    margin-left: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: flex-start;
+    position: static;
+    z-index: auto;
+  }
+  .cart-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.cart-container,
+.cart-empty {
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
