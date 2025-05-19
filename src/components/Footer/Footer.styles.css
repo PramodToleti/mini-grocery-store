@@ -1,0 +1,9 @@
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text);
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
