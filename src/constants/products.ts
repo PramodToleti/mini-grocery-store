@@ -1,0 +1,88 @@
+import type { Product } from "../types/Product";
+
+export const PRODUCTS: Product[] = [
+  {
+    id: "1",
+    name: "Apple",
+    price: 1.2,
+    category: "Fruits",
+    image: "https://picsum.photos/seed/apple/200/200",
+  },
+  {
+    id: "2",
+    name: "Banana",
+    price: 0.5,
+    category: "Fruits",
+    image: "https://picsum.photos/seed/banana/200/200",
+  },
+  {
+    id: "3",
+    name: "Broccoli",
+    price: 2.0,
+    category: "Vegetables",
+    image: "https://picsum.photos/seed/broccoli/200/200",
+  },
+  {
+    id: "4",
+    name: "Carrot",
+    price: 1.0,
+    category: "Vegetables",
+    image: "https://picsum.photos/seed/carrot/200/200",
+  },
+  {
+    id: "5",
+    name: "Milk",
+    price: 1.5,
+    category: "Dairy",
+    image: "https://picsum.photos/seed/milk/200/200",
+  },
+  {
+    id: "6",
+    name: "Cheese",
+    price: 3.5,
+    category: "Dairy",
+    image: "https://picsum.photos/seed/cheese/200/200",
+  },
+  {
+    id: "7",
+    name: "Bread",
+    price: 2.2,
+    category: "Bakery",
+    image: "https://picsum.photos/seed/bread/200/200",
+  },
+  {
+    id: "8",
+    name: "Eggs",
+    price: 2.8,
+    category: "Dairy",
+    image: "https://picsum.photos/seed/eggs/200/200",
+  },
+  {
+    id: "9",
+    name: "Chicken",
+    price: 5.0,
+    category: "Meat",
+    image: "https://picsum.photos/seed/chicken/200/200",
+  },
+  {
+    id: "10",
+    name: "Fish",
+    price: 4.5,
+    category: "Meat",
+    image: "https://picsum.photos/seed/fish/200/200",
+  },
+  {
+    id: "11",
+    name: "Rice",
+    price: 1.8,
+    category: "Grains",
+    image: "https://picsum.photos/seed/rice/200/200",
+  },
+  {
+    id: "12",
+    name: "Lentils",
+    price: 2.3,
+    category: "Grains",
+    image: "https://picsum.photos/seed/lentils/200/200",
+  },
+];
