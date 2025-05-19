@@ -2,6 +2,14 @@
 
 A modern, responsive grocery store web app built with React, TypeScript, and Vite.
 
+## Screenshots
+<img width="1460" alt="Screenshot 2025-05-19 at 9 40 46 AM" src="https://github.com/user-attachments/assets/bdd33601-a47d-4849-91e8-4c446a570bc9" />
+<img width="1459" alt="Screenshot 2025-05-19 at 9 41 50 AM" src="https://github.com/user-attachments/assets/911ae1dc-ad84-4eb6-8d87-458e34d44196" />
+<img width="1455" alt="Screenshot 2025-05-19 at 9 42 08 AM" src="https://github.com/user-attachments/assets/c4eb6b5d-b54e-44cd-a6b0-12320187c4d6" />
+<img width="1452" alt="Screenshot 2025-05-19 at 9 42 57 AM" src="https://github.com/user-attachments/assets/9e6fac8e-dd23-42aa-b86a-8cc9880a7b1e" />
+<img width="1457" alt="Screenshot 2025-05-19 at 9 43 09 AM" src="https://github.com/user-attachments/assets/462f5328-1aa3-4fa0-9034-d8ec37391c69" />
+
+
 ## Features
 
 - **Product Catalog**:
